@@ -31,6 +31,7 @@ public class Tim {
 		this.nama = nama;
 	}
 	
+
 	public void tampilPemainInti() {
 		for (int i = 0; i < pemainInti.size(); i++) {
 			Pemain p = pemainInti.get(i);
@@ -38,4 +39,14 @@ public class Tim {
 		}
 	}
 
+	public boolean tambahPemainInti(Pemain pemain) {
+		if (pemainInti.size() < 11) {
+			pemainInti.add(pemain);
+			System.out.println(pemain.getNama()+ " berhasil menambahkan pemain inti.");
+			return true;
+		} else {
+			System.out.println(pemain.getNama()+ " tidak berhasil menambahkan pemain inti.");
+			return false;
+		}
+	}
 }
