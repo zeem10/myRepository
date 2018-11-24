@@ -30,5 +30,12 @@ public class Tim {
 	public Tim(String nama) {
 		this.nama = nama;
 	}
+	
+	public void tampilPemainInti() {
+		for (int i = 0; i < pemainInti.size(); i++) {
+			Pemain p = pemainInti.get(i);
+			System.out.println(p.getNoPunggung() + " # " + p.getNama());
+		}
+	}
 
 }
